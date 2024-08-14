@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(background.jpg);
+    filter: blur(4px);
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  NAV BAR  */
+
+header {
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid white;
+}
+
+nav .left-nav {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.7rem;
+    padding-left: 100px;
+
+}
+
+nav .right-nav {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-right: 50px;
+}
+
+nav .right-nav .nav-ul {
+    display: flex;
+    align-items: center;
+
+}
+
+nav .right-nav .nav-ul .nav-li {
+    list-style: none;
+    margin: 0 45px;
+}
+
+nav .right-nav .nav-ul .nav-li a {
+    color: white;
+}
+
+/* MAIN SECTION     MAIN SECTION    MAIN SECTION    MAIN SECTION    MAIN SECTION    MAIN SECTION    MAIN SECTION    MAIN SECTION    MAIN SECTION    MAIN SECTION    MAIN SECTION    MAIN SECTION    */
+main {
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+
+}
+
+main .left-main {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .left-main .left-sub-main {
+    color: white;
+    font-weight: 800;
+    font-size: 6rem;
+}
+
+.sizing {
+    font-size: 5rem;
+
+}
+
+.coloring1 {
+    color: rgb(8, 235, 235);
+
+}
+
+.coloring2 {
+    color: rgb(190, 8, 235);
+
+}
+
+.button-for-main {
+    display: flex;
+    align-items: center;
+}
+
+.button-for-main a {
+    display: flex;
+    align-items: center;
+}
+
+.main-button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 15px 35px;
+    background-color: rgb(101, 250, 250);
+    cursor: pointer;
+
+}
+
+main .right-main {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+main .right-main img {
+    height: 70%;
+    width: 100%;
+
+}
+
+
+
+
+/* EDIT TAB     EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    EDIT TAB    */
+
+.edit-left-main {
+    font-size: 4rem;
+}
+
+.button-for-edit {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.button-for-edit a {
+    display: flex;
+    cursor: pointer;
+}
+
+
+/* ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB     ADD TAB      */
+.add-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-item-box {
+    height: 725px;
+    width: 500px;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.add-item-box-headding {
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding: 45px 0;
+}
+
+.add-element {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+    width: 420px;
+    padding: 0 5px;
+    font-size: 1.3rem;
+}
+
+.add-item-box label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    font-size: 1.3rem;
+}
+
+.add-item-box textarea {
+    font-size: 1.3rem;
+    height: 150px;
+    width: 420px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.button-for-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-for-add a{
+    display: flex;
+    margin-top: 5px;
+}
+
+.add-section-button{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: rgb(101, 250, 250);
+}
+
+label span{
+    color:  red;
+}
+
+/* VIEW SECTION     VIEW SECTION     VIEW SECTION     VIEW SECTION     VIEW SECTION     VIEW SECTION     VIEW SECTION     VIEW SECTION     VIEW SECTION     VIEW SECTION     VIEW SECTION     */
+.view-main{
+    flex-direction: column;
+}
+
+.view-selector-buttons{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#view-check-button{
+    height: 52px;
+    width: 125px;
+    border-radius: 10px;
+    border: none;
+    background-color: aquamarine;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.view-date-input{
+    font-size: 2.2rem;
+    font-weight: 800;
+
+}
+
+#date-input-view{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+    width: 300px;
+    padding: 0 5px;
+    font-size: 1.3rem;
+}
+
+.view-content-flex{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.View-details table {
+    /* margin-left: auto;
+    margin-right: auto; */
+    border-color: rgb(255, 255, 255);
+    border-collapse: collapse;
+    max-width: 3300px;
+    max-height: 1800px;
+}
+
+.View-details thead {
+    margin-top: 5px;
+    text-align: center;
+    font-style: normal;
+    color: white;
+    HEIGHT: 40PX;
+    font-weight: 800;
+    font-size: 3.5rem;
+    
+}
+
+.View-details thead th{
+    padding: 10px 50px;
+}
+
+.View-details tbody {
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.View-details tbody td{
+    max-width: 450px;
+    padding: 10px 20px;
+    overflow-wrap: break-word;
+}
+

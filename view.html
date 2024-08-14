@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hisab Rakho</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <h1>HISAB RAKHHO</h1>
+            </div>
+            <div class="right-nav">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="/index.html">Home</a></li>
+                    <li class="nav-li"><a href="/view.html">View</a></li>
+                    <li class="nav-li"><a href="/edit.html">Edit</a></li>
+                    <li class="nav-li"><a href="/about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="view-main">
+        <div class="view-selector-buttons">
+            <div class="view-date-input">
+                <label for="date-input-view">Choose a date:</label>
+                <input type="month" id="date-input-view" name="date-input">
+            </div>
+            <button class="view-check-button" id="view-check-button" type="submit"> Check Me!</button>
+        </div>
+        <div class="view-content-flex">
+            <div class="View-details">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>DATE</th>
+                            <th>ITEM NAME</th>
+                            <th>AMOUNT</th>
+                            <th>COMMENT</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

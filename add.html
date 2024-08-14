@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hisab Rakho</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <h1>HISAB RAKHHO</h1>
+            </div>
+            <div class="right-nav">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="/index.html">Home</a></li>
+                    <li class="nav-li"><a href="/view.html">View</a></li>
+                    <li class="nav-li"><a href="/edit.html">Edit</a></li>
+                    <li class="nav-li"><a href="/about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="add-item">
+        <div class="add-item-box" id="myForm">
+            <div class="add-item-box-headding">
+                <h3>ADD KHOROCH</h3>
+            </div>
+            <label for="calendar">
+                <input type="date" id="Test_Date" class="add-element get-data" required><div class="label-heading">Choose the date from the calendar <span>*</span></div>
+            </label>
+            <br><br>
+            <label for="name">
+                <select name="items" id="cars" class="add-element get-data" required>
+                    <option value="Taka-Tullam">Taka Tullam</option>
+                    <option value="Sobji">Sobji</option>
+                    <option value="Mach">Mach</option>
+                    <option value="Goldari">Goldari</option>
+                    <option value="Gumti Dokan">Gumti Dokan</option>
+                    <option value="Husband/Wife">Husband/Wife</option>
+                    <option value="Son/Daughter">Son/Daughter</option>
+                    <option value="Others">Others</option>
+                  </select><div class="label-heading">Choose From the list <span>*</span></div>
+            </label>
+            <br><br>
+            <label for="Amount" id="label-add">
+                <input type="number" placeholder="Enter The Amount" id="Amount" class="add-element get-data" required><div class="label-heading">Enter The Amount <span>*</span></div>
+            </label>
+            <br><br>
+            <textarea name="add" id="add" placeholder="Please Write The details about the khorcha ..." cols="58"
+                rows="10"></textarea>
+            <br>
+            <div class="button-for-add">
+                <a href="/add.html"><button class="add-section-button get-data" type="submit">Add</button></a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
