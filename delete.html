@@ -28,8 +28,31 @@
         </nav>
     </header>
 
-    <main>
+    <main class="view-main">
+        <div class="view-selector-buttons">
+            <div class="view-date-input">
+                <label for="date-input-view">Choose a date:</label>
+                <input type="month" id="date-input-view" name="date-input">
+            </div>
+            <button class="view-check-button" id="view-check-button" type="submit"> Check Me!</button>
+        </div>
+        <div class="view-content-flex">
+            <div class="View-details">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>DATE</th>
+                            <th>ITEM NAME</th>
+                            <th>AMOUNT</th>
+                            <th>COMMENT</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
 
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>

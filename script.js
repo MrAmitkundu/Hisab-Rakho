@@ -110,6 +110,7 @@ function scriptForAddPage() {
     function saveInputDetails() {
         // Get values from the form
         const date = document.getElementById('Test_Date').value;
+        console.log(date);
         const item = document.getElementById('cars').value;
         const amount = parseInt(document.getElementById('Amount').value) || 0; // Parse amount as integer
         const details = document.getElementById('add').value;
@@ -199,6 +200,8 @@ function scriptForAddPage() {
 
         // Clear the form fields after saving
         document.getElementById('myForm').reset(); // Ensure 'myForm' is the ID of your form element
+        setCurrentDate();
+        // document.getElementById('add').value = '';
     }
 
     // Function to handle old balance in local storage
